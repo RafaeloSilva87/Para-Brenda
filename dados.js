@@ -6,44 +6,44 @@
 
 const DADOS = {
   // ---- Capa / abertura ----
-  capaTitulo: "Para você",
+  capaTitulo: "Para Brenda",
   capaDica: "toque para entrar",
 
   // ---- Hero (primeira página) ----
-  heroEyebrow: "Para peru, com amor",
+  heroEyebrow: "Com todo o meu amor, para você",
   heroTitulo: "Te amo", // a última palavra do título fica destacada em rosa
-  heroSubtitulo: "Uma declaração especial para você",
+  heroSubtitulo: "Cada momento ao seu lado vale a pena",
   heroTexto:
-    "Escreva aqui um parágrafo contando por que criou esse site — o que essa pessoa significa pra você, o que ela faz pelo seu dia. Esse é o primeiro texto que ela vai ler, então vale a pena ser bem pessoal.",
+    "Criei esse site porque palavra falada some, mensagem de texto some, mas isso aqui vai ficar. Quero que sempre que você abrir, sinta o quanto eu penso em você, o quanto eu me lembro de nois, e o quanto eu tenho sorte de ter você do meu lado.",
 
   // ---- Bilhetes (recados curtos, tipo post-it) ----
   // cor: "algodao" (rosa), "manteiga" (amarelo) ou "menta" (verde)
   bilhetes: [
     {
       texto:
-        "Escreva aqui uma mensagem carinhosa — algo que você diria todos os dias.",
-      rabisco: "todos os dias",
+        "Você me faz querer ser a melhor versão de mim mesmo todos os dias. Só de pensar em você, meu dia já melhora.",
+      rabisco: "todo dia",
       cor: "algodao",
       tilt: -4,
     },
     {
       texto:
-        "Escreva aqui outra mensagem — pode ser sobre um motivo específico de gratidão.",
-      rabisco: "todas as horas",
+        "Eu não preciso de muito — só de você por perto, de um sorriso seu, e tá bom demais.",
+      rabisco: "de verdade",
       cor: "menta",
       tilt: 3,
     },
     {
       texto:
-        "Escreva aqui uma mensagem sobre o que essa pessoa representa na sua vida.",
+        "Lembro de nois e fico com aquele sorriso bobo que eu nem consigo esconder. Você faz isso comigo.",
       rabisco: "para sempre",
       cor: "manteiga",
       tilt: -2,
     },
     {
       texto:
-        "Escreva aqui uma última mensagem — pode fechar com algo bem afetivo.",
-      rabisco: "eternidade",
+        "Obrigado por existir do jeito que você é. Não muda nada, tá? Tô apaixonado exatamente por isso.",
+      rabisco: "do jeitinho",
       cor: "algodao",
       tilt: 4,
     },
@@ -52,71 +52,89 @@ const DADOS = {
   // ---- Mural de fotos ----
   // tamanho: "normal", "grande" (2x2), "larga" (2x1, use só para foto na horizontal)
   // ou "alta" (1x2, use só para foto na vertical)
-  // Troque os arquivos em /imagens e ajuste o campo "arquivo" (deixe vazio para mostrar o placeholder)
+  // Todas as fotos são verticais (retrato), então use "normal", "alta" ou "grande"
   fotos: [
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "grande" },
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "normal" },
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "normal" },
+    { arquivo: "f1.jpeg", legenda: "A gente junto ❤️", tamanho: "grande" },
     {
-      arquivo: "",
-      legenda: "Foto sua e do seu mozão aqui (use uma foto vertical)",
+      arquivo: "f2.jpeg",
+      legenda: "Momentos assim não têm preço",
+      tamanho: "normal",
+    },
+    {
+      arquivo: "f3.jpeg",
+      legenda: "Você ilumina qualquer lugar",
       tamanho: "alta",
     },
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "normal" },
     {
-      arquivo: "",
-      legenda: "Foto sua e do seu mozão aqui (use uma foto horizontal)",
-      tamanho: "larga",
+      arquivo: "f4.jpeg",
+      legenda: "Sorriso que me conquista",
+      tamanho: "normal",
     },
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "normal" },
-    { arquivo: "", legenda: "Foto sua e do seu mozão aqui", tamanho: "normal" },
+    { arquivo: "f5.jpeg", legenda: "Do nosso jeito", tamanho: "normal" },
+    { arquivo: "f6.jpeg", legenda: "Lembrando de nois", tamanho: "alta" },
+    { arquivo: "f7.jpeg", legenda: "Felicidade tem rosto", tamanho: "normal" },
+    { arquivo: "f8.jpeg", legenda: "Sempre Juntos", tamanho: "grande" },
+    { arquivo: "f9.jpeg", legenda: "Olha o sorriso", tamanho: "normal" },
+    { arquivo: "f10.jpeg", legenda: "Pra guardar pra sempre", tamanho: "alta" },
+    { arquivo: "f11.jpeg", legenda: "Você é demais", tamanho: "normal" },
+    { arquivo: "f12.jpeg", legenda: "Juntinhos", tamanho: "normal" },
   ],
 
   // ---- Varal de motivos ----
   motivos: [
     {
-      titulo: "Motivo 1",
-      texto: "Conte aqui um motivo pelo qual você ama essa pessoa.",
-    },
-    {
-      titulo: "Motivo 2",
+      titulo: "Seu sorriso",
       texto:
-        "Pode ser algo simples do dia a dia, tipo um jeito de falar ou de rir.",
+        "Tem dias que tá difícil, aí você sorri e parece que tudo se resolve. Não sei como você faz isso.",
     },
     {
-      titulo: "Motivo 3",
-      texto: "Ou algo mais profundo, como um valor que essa pessoa tem.",
+      titulo: "Do jeito que você cuida",
+      texto:
+        "Você não precisa dizer nada — você demonstra. No olhar, no gesto, no cuidado que você tem. Isso me derrete.",
     },
     {
-      titulo: "Motivo 4",
-      texto: "Quanto mais específico e pessoal, melhor fica.",
+      titulo: "Sua companhia",
+      texto:
+        "Não importa o que a gente tá fazendo — pode ser saindo, pode ser em casa parado — do seu lado é sempre bom.",
     },
     {
-      titulo: "Motivo 5",
-      texto: "Edite ou remova este card se quiser menos motivos.",
-    },
-    { titulo: "Motivo 6", texto: "Ou adicione mais — não tem limite." },
-    {
-      titulo: "Motivo 7",
-      texto: "Capriche nos detalhes que só você sabe sobre essa pessoa.",
+      titulo: "Sua força",
+      texto:
+        "Você é mais forte do que pensa. Eu vejo isso em você e me inspiro todo dia.",
     },
     {
-      titulo: "Motivo 8",
-      texto: "Esse é o último, mas pode adicionar quantos quiser na lista.",
+      titulo: "Como você me faz sentir",
+      texto:
+        "Com você eu me sinto em paz. É uma sensação estranha de boa — tipo, eu não preciso ser mais ninguém.",
+    },
+    {
+      titulo: "Seu jeito único",
+      texto:
+        "Não tem ninguém igual a você. E eu não trocaria esse jeito por nada.",
+    },
+    {
+      titulo: "A nossa história",
+      texto:
+        "Cada memória que a gente foi construindo junto virou um tesouro pra mim. Quero fazer muito mais.",
+    },
+    {
+      titulo: "Você",
+      texto:
+        "Simples assim. Não tem como explicar tudo que você significa — mas esse site é uma tentativa.",
     },
   ],
 
   // ---- Raspadinhas (a surpresa final) ----
   surpresas: [
-    "hey brother",
-    "Escreva aqui uma frase surpresa 2",
-    "Escreva aqui uma frase surpresa 3",
-    "Escreva aqui uma frase surpresa 4",
-    "Escreva aqui uma frase surpresa 5",
-    "Escreva aqui uma frase surpresa 6",
+    "Você é a minha música favorita 🎵",
+    "Eu me lembro de nois toda hora ❤️",
+    "Seu sorriso é meu lugar favorito",
+    "Sorte a minha, te encontrar",
+    "Você merece tudo de bom",
+    "Amo você do jeito que você é 🩷",
   ],
 
   // ---- Música de fundo ----
   // Coloque o arquivo .mp3 em /musica e escreva o nome aqui. Deixe "" para não ter música.
-  musica: "",
+  musica: "LEMBREI DE NOIS - João Gomes, Fabinho Testado e MC Tuto.mp3",
 };
